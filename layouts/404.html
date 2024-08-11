@@ -1,24 +1,18 @@
 {{define "head"}}
 <style>
-	article {
-		height: 50vh;
-		display: flex;
-		flex-direction: column;
-		place-content: center;
-		text-align: center;
+	article > * {
+		max-width: 80%;
 	}
 </style>
 {{end}}
 
 {{define "main"}}
 <article>
-	<img src="/error.svg" alt="Error 404: Page not found">
-	<h2>Not found</h2>
+	<h1><img width="128" height="128" src="/symbols/error.svg" alt="Error 404: Page not found"></h1>
+	<h1>Not found</h1>
 	<p>
-		There is nothing at this address,
-		either because there are nothing here
-		or the content supposed to be here has
-		been moved or mistyped
+		There is nothing at this address, either because there are nothing here
+		or the content supposed to be here has been moved or mistyped
 	</p>
 </article>
 {{end}}

@@ -9,11 +9,13 @@
 	<meta charset="UTF-8">
 	<meta name="description" content="{{ .Page.Description }}">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="Content-Security-Policy" content="script-src 'unsafe-inline'">
+	{{ template "_internal/schema.html" . }}
+	{{ template "_internal/opengraph.html" . }}
+	{{ template "_internal/twitter_cards.html" . }}
 
-	<title>{{ .Page.Title }} | {{ .Site.Title}}</title>
+	<title>{{ .Page.Title }} &bull; {{ .Site.Title}}</title>
 
-	<link rel="shortcut icon" href="/favicon.svg" type="image/x-icon">
+	<link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml">
 	<link rel="stylesheet" href="{{ $style.Permalink }}">
 
 	{{- block "head" . }}{{- end }}
@@ -26,6 +28,15 @@
 		{{- block "main" . }}{{- end }}
 		{{- partial "footer.html" . -}}
 	</main>
+	<script>
+		// Configure every external link to open in a new browser tab
+		for (const link of document.getElementsByTagName('a')) {
+			if (link.href.startsWith("https://")) {
+				link.target = '_blank';
+				link.rel = 'noreferrer noopener';
+			}
+		}
+	</script>
 </body>
 
 </html>

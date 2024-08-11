@@ -1,10 +1,15 @@
 languageCode: en-VN
 baseURL: http://turitoyuenan.github.io
-title: The Internerdt
-copyright: 2023 Minh Triet
+title: Turito Yuenan
+copyright: 2024 Nguyen Ta Minh Triet
 
 enableEmoji: true
 enableRobotsTXT: true
+
+params:
+  social:
+    facebook_admin: TuritoYuenan
+    twitter: TuritoYuenan
 
 menu:
   main:
@@ -13,18 +18,18 @@ menu:
       params:
         symbol: feed
       weight: 1
-    - name: Projects
+    - name: Project Showcase
       pageRef: /projects
       params:
         symbol: storage
       weight: 2
-    - name: Contact
-      pageRef: /contact
+    - name: Science Wiki
+      pageRef: /science
       params:
         symbol: language
       weight: 3
     - name: Portfolio
-      pageRef: /portfolio
+      url: https://turitoyuenan.github.io/TuritoYuenan
       params:
         symbol: profile
       weight: 4

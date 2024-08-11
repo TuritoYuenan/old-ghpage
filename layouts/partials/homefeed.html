@@ -1,0 +1,9 @@
+{{ range . }}
+<div>
+	<img src="{{ .Page.Params.thumbnail }}" alt="Thumbnail for '{{ .Page.Title }}'" width="1024" height="768" />
+	<a class="info" href="{{ .Page.RelPermalink }}">
+		<h2>{{ .Page.Title }}</h2>
+		<p>{{ .Page.Description }}</p>
+	</a>
+</div>
+{{ end }}

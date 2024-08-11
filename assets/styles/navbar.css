@@ -51,7 +51,7 @@ nav {
 }
 
 /* Mobile mode */
-@media (max-width: 600px) {
+@media (width <= 600px) {
 	/* Remove lent space for navbar */
 	main {
 		margin-left: 0;

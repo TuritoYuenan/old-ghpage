@@ -7,7 +7,7 @@ thumbnail: /thumbnails/pixiv-kiribann.webp
 ---
 This is a compilation of artworks published on the pixiv platform that have luckily been assigned to a special number. On the Japanese internet, these special numbers are called **kiriban** which are like milestones.
 
-> Warning: Some of these artworks are NSFW
+> :warning: **Warning:** Some of these artworks are NSFW
 
 ## Rounded numbers
 

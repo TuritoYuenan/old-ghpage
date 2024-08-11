@@ -43,7 +43,7 @@ article {
 	}
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
 	#frontmatter {
 		padding: .5rem;
 	}

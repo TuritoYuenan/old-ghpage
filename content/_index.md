@@ -1,6 +1,6 @@
 ---
-title: Homepage
-description: Turito Yuenan's website and blog
+title: Welcome to Turito Yuenan's website
+description: Contents, Showcases, Tutorials, and others
 date: 2023-02-15T21:17:16+07:00
 draft: false
 ---
