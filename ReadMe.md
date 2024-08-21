@@ -1,25 +1,21 @@
-# The Internerdt - My Personal Website
+# My Personal Website
 
-## Etymology
+This is a website that I use to post blogs/articles and other thingamabobs.
 
-- "The Internet" (most contents are about the internet)
-- "Nerds" (i'm a nerd, maybe; it might also be for nerds)
-- "Lindt" (it just sound fancy)
+## How to deploy? / Manual
 
-## Tech stack
+1. Clone this repository
+2. Install [Hugo](https://gohugo.io) (Extended version) on your device
+3. Serve the website
+	- Using VSCode, do **Ctrl + Shift + P** and **Tasks: Run Test Task**
+	- Using CLI: `hugo server --minify`
 
-- Solely built with Hugo CMS
-- Theme and layout is custom made in HTML and CSS
-- Design conceived using Figma
-- (yeah nothing special)
+## What technologies are used? / Tech stack
 
-## Usage
+- Design program: Figma
+- Build tool: Hugo
+- Languages: HTML, CSS, SVG, Markdown
 
-- Install [Hugo](https://gohugo.io)
-- In case of VSCode, do **Ctrl + Shift + P** and **Tasks: Run Test Task**
-- In case of CLI:
+## Who is involved? / Credits
 
-```shell
-cd turitoyuenan.github.io
-hugo server --minify
-```
+- Author: **Nguyen Ta Minh Triet**x

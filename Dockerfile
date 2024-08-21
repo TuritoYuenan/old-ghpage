@@ -1,14 +1,13 @@
+# This doesn't work
+# From local browser cannot access the exposed port
+
 FROM alpine:edge
 
 WORKDIR /app
 
-RUN apk -U upgrade && apk cache clean
-
-RUN apk add hugo
+RUN apk --no-cache -U upgrade && apk --no-cache add hugo
 
 COPY . .
-
-RUN hugo --minify
 
 EXPOSE 1313
 
