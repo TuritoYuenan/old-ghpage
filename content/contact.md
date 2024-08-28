@@ -3,7 +3,7 @@ title: Contact
 description: (proof-of-concept version)
 date: 2023-10-02T19:48:13+07:00
 draft: false
-thumbnail: /thumbnails/blank.webp
+thumbnail: https://placehold.co/400x300
 ---
 ## Social networks
 

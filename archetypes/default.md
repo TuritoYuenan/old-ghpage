@@ -1,8 +1,8 @@
 ---
 title: {{ replace .Name "-" " " | title }}
-description: 
+description:
 date: {{ .Date }}
 draft: true
-thumbnail: /thumbnails/blank.webp
+thumbnail: https://placehold.co/400x300
 ---
 
