@@ -1,6 +1,6 @@
 {{define "head"}}
 <style>
-	/* List page header */
+	/* MARK: List page header */
 	header {
 		padding: 1rem;
 		text-align: center;
@@ -15,30 +15,30 @@
 		}
 	}
 
-	/* List view */
+	/* MARK: List view */
 	#listview {
 		padding: 1rem;
 
-		/* Grid layout */
+		/* MARK: Grid layout */
 		display: grid;
 		grid-template-columns: auto; /*repeat(auto-fit, minmax(50ch, 1fr));*/
 		gap: 2rem;
 	}
 
-	/* List item */
+	/* MARK: List item */
 	#listview a {
-		/* Keep default color */
+		/* MARK: Keep default color */
 		color: inherit;
 
-		/* Flexbox layout */
+		/* MARK: Flexbox layout */
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 
-		/* Gap between thumbnail and info */
+		/* MARK: Gap between thumbnail and info */
 		gap: 2rem;
 
-		/* Item thumbnail */
+		/* MARK: Item thumbnail */
 		& img {
 			max-width: 30ch;
 			width: 100%;

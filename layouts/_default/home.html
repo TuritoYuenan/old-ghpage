@@ -1,0 +1,33 @@
+{{ define "head" }}
+{{ $style := resources.Get "styles/page-home.css" | minify }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+{{ end }}
+
+{{ define "main" }}
+{{ $favicon := relURL "favicon.svg" }}
+<header id="hero">
+	<div><img src="{{ $favicon }}" alt="" width="256" height="256"></div>
+	<div>
+		<h1 id="title">{{ site.Title }}</h1>
+		<p id="subtitle">{{ page.Description }}</p>
+	</div>
+</header>
+<article>
+	{{ .Content }}
+	<h1>Contents</h1>
+	<p>Articles, Blog posts, Announcements</p>
+	<section class="homefeed">
+		{{ partial "homefeed.html" (where site.RegularPages "Section" "contents") }}
+	</section>
+	<h1>Project Showcase</h1>
+	<p>Showcases and devlogs of my projects</p>
+	<section class="homefeed">
+		{{ partial "homefeed.html" (where site.RegularPages "Section" "projects") }}
+	</section>
+	<h1>Science Wiki</h1>
+	<p>Collection of science knowledge and stuffs</p>
+	<section class="homefeed">
+		{{ partial "homefeed.html" (where site.RegularPages "Section" "science") }}
+	</section>
+</article>
+{{ end }}

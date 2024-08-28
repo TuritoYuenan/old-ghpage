@@ -1,42 +1,37 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
+<html lang="{{ site.LanguageCode }}">
 
-{{ $globalStyle := resources.Get "styles/global.css"}}
-{{ $navbarStyle := resources.Get "styles/navbar.css"}}
-{{ $style := slice $globalStyle $navbarStyle | resources.Concat "style.css" | minify }}
+{{ $globalStyle := resources.Get "styles/global.css" | minify }}
+{{ $linkScript := resources.Get "scripts/links.js" | js.Build "links.js" | minify | resources.Fingerprint "sha512" }}
+{{ $favicon := relURL "favicon.svg" }}
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="description" content="{{ .Page.Description }}">
+	<meta name="description" content="{{ page.Description }}">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	{{ template "_internal/schema.html" . }}
 	{{ template "_internal/opengraph.html" . }}
 	{{ template "_internal/twitter_cards.html" . }}
 
-	<title>{{ .Page.Title }} &bull; {{ .Site.Title}}</title>
+	<title>{{ page.Title }} &bull; {{ site.Title }}</title>
 
-	<link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml">
-	<link rel="stylesheet" href="{{ $style.Permalink }}">
+	{{ range .AlternativeOutputFormats }}
+	<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="{{ site.Title }}">
+	{{ end }}
+	<link rel="shortcut icon" href="{{ $favicon }}" type="image/svg+xml">
+	<link rel="stylesheet" href="{{ $globalStyle.Permalink }}">
 
-	{{- block "head" . }}{{- end }}
+	{{ block "head" . }}{{ end }}
 </head>
 
 <body>
 	<script>0</script>
-	{{- partial "navbar.html" . -}}
+	{{ partial "navbar.html" . }}
 	<main>
-		{{- block "main" . }}{{- end }}
-		{{- partial "footer.html" . -}}
+		{{ block "main" . }}{{ end }}
+		{{ partial "footer.html" . }}
 	</main>
-	<script>
-		// Configure every external link to open in a new browser tab
-		for (const link of document.getElementsByTagName('a')) {
-			if (link.href.startsWith("https://")) {
-				link.target = '_blank';
-				link.rel = 'noreferrer noopener';
-			}
-		}
-	</script>
+	<script src="{{ $linkScript.Permalink }}" integrity="{{ $linkScript.Data.Integrity }}"></script>
 </body>
 
 </html>

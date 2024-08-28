@@ -1,0 +1,67 @@
+/* MARK: Feed */
+.homefeed {
+	padding-block: 1rem;
+	display: flex;
+	flex-direction: row;
+	overflow-x: auto;
+	gap: 1.5rem;
+}
+
+/* MARK: Feed item */
+.homefeed > div {
+	--fwidth: 300px;
+	--fsize: 10px;
+
+	max-width: var(--fwidth);
+	margin-right: var(--fsize);
+	background: #FFF1;
+	border-radius: 1rem;
+	box-shadow: var(--fsize) var(--fsize) var(--haikei-red);
+}
+
+/* MARK: Feed item - Thumbnail */
+.homefeed > div img {
+	/* MARK: Responsive image size */
+	width: var(--fwidth);
+	height: auto;
+
+	/* MARK: As a rounded block */
+	display: block;
+	border-radius: 1rem 1rem 0 0;
+}
+
+/* MARK: Feed item - Info */
+.homefeed > div .info {
+	padding: 1rem;
+	color: inherit;
+	display: block;
+}
+
+/* MARK: Hero banner */
+#hero {
+	padding: 1rem;
+	text-align: center;
+
+	display: flex;
+	flex-direction: column;
+	place-items: center;
+}
+
+#hero #title {
+	font-size: 5rem;
+	font-variant: small-caps;
+}
+
+#hero #subtitle {
+	font-size: 2rem;
+}
+
+@media (width <= 900px) {
+	#hero #title {
+		font-size: 3rem;
+	}
+
+	#hero #subtitle {
+		font-size: 1rem;
+	}
+}
