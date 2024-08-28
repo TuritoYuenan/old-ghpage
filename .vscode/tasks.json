@@ -4,22 +4,22 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"label": "Serve site",
-			"type": "shell",
-			"command": "hugo server --minify",
-			"problemMatcher": [],
-			"group": {
-				"kind": "test",
-				"isDefault": true
-			}
-		},
-		{
-			"label": "Build site",
+			"label": "build",
 			"type": "shell",
 			"command": "hugo --minify",
 			"problemMatcher": [],
 			"group": {
 				"kind": "build",
+				"isDefault": true
+			}
+		},
+		{
+			"label": "dev mode",
+			"type": "shell",
+			"command": "hugo server -D",
+			"problemMatcher": [],
+			"group": {
+				"kind": "test",
 				"isDefault": true
 			}
 		}

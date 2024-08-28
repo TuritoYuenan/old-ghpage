@@ -7,6 +7,9 @@ enableEmoji: true
 enableRobotsTXT: true
 
 params:
+  author:
+    email: turitoyuenan@proton.me
+    name: Turito Yuenan
   social:
     facebook_admin: TuritoYuenan
     twitter: TuritoYuenan
