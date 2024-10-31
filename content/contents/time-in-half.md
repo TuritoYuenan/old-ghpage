@@ -1,5 +1,5 @@
 ---
-title: Breaking a Time Period in Half
+title: Equal Time Before and After
 description: A fun thought experiment about time
 date: 2023-02-17T21:22:32+07:00
 draft: true

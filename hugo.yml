@@ -15,6 +15,34 @@ params:
     twitter: TuritoYuenan
 
 menu:
+  social:
+    - name: Github
+      url: https://github.com/TuritoYuenan
+      weight: 1
+    - name: LinkedIn
+      url: https://linkedin.com/in/turitoyuenan
+      weight: 2
+    - name: Leetcode
+      url: https://leetcode.com/TuritoYuenan
+      weight: 3
+    - name: Replit
+      url: https://replit.com/@TuritoYuenan
+      weight: 4
+    - name: Facebook
+      url: https://facebook.com/TuritoYuenan
+      weight: 5
+    - name: Pinterest
+      url: https://pinterest.com/TuritoYuenan
+      weight: 6
+    - name: Reddit
+      url: https://reddit.com/u/LeaderTurito
+      weight: 7
+    - name: Twitter
+      url: https://twitter.com/TuritoYuenan
+      weight: 8
+    - name: Tumblr
+      url: https://turitoyuenan.tumblr.com
+      weight: 9
   main:
     - name: Contents
       pageRef: /contents
