@@ -15,11 +15,11 @@ header p {
 #listview {
 	padding: 1rem;
 
-	/* MARK: Grid layout */
+	/* Grid layout */
 	display: grid;
-	grid-template-columns: auto;
-	/*repeat(auto-fit, minmax(50ch, 1fr));*/
 	gap: 2rem;
+	grid-template-columns: auto;
+	/*grid-template-columns: repeat(auto-fit, minmax(50ch, 1fr));*/
 }
 
 /* MARK: List item */
@@ -38,7 +38,7 @@ header p {
 
 /* MARK: Item thumbnail */
 #listview a img {
-	max-width: 30ch;
+	max-width: 20ch;
 	width: 100%;
 	height: auto;
 	display: block;

@@ -54,12 +54,12 @@ menu:
       params:
         symbol: storage
       weight: 2
-    - name: Science Wiki
-      pageRef: /science
+    - name: Science Website
+      url: https://turitoyuenan.github.io/science-website
       params:
         symbol: language
       weight: 3
-    - name: Portfolio
+    - name: My Curriculum Vitae
       url: https://turitoyuenan.github.io/TuritoYuenan
       params:
         symbol: profile

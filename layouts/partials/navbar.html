@@ -6,7 +6,7 @@
 	</a>
 	<div id="menu">
 		{{ range site.Menus.main }}
-		<a href="{{ .URL }}" aria-label="Go to {{ .Name }} page">
+		<a href="{{ .URL }}" title="{{ .Name }}" aria-label="Go to {{ .Name }} page">
 			<img src="/symbols/{{ .Params.symbol }}.svg" alt="{{ .Name }} icon" width="64" height="64">
 		</a>
 		{{ end }}
