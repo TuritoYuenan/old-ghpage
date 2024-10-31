@@ -1,0 +1,48 @@
+/* MARK: List page header */
+header {
+	padding: 1rem;
+}
+
+header h1 {
+	font-size: 3rem;
+}
+
+header p {
+	font-size: 1.5rem;
+}
+
+/* MARK: List view */
+#listview {
+	padding: 1rem;
+
+	/* MARK: Grid layout */
+	display: grid;
+	grid-template-columns: auto;
+	/*repeat(auto-fit, minmax(50ch, 1fr));*/
+	gap: 2rem;
+}
+
+/* MARK: List item */
+#listview a {
+	/* Keep default color */
+	color: inherit;
+
+	/* Flexbox layout */
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	/* Gap between thumbnail and info */
+	gap: 2rem;
+}
+
+/* MARK: Item thumbnail */
+#listview a img {
+	max-width: 30ch;
+	width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 1rem;
+
+	box-shadow: 10px 10px var(--haikei-red);
+}

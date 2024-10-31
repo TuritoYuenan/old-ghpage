@@ -20,14 +20,16 @@
 		{{ partial "homefeed.html" (where site.RegularPages "Section" "contents") }}
 	</section>
 	<h1>Project Showcase</h1>
-	<p>Showcases and devlogs of my projects</p>
+	<p>Showcase of my projects</p>
 	<section class="homefeed">
 		{{ partial "homefeed.html" (where site.RegularPages "Section" "projects") }}
 	</section>
-	<h1>Science Wiki</h1>
-	<p>Collection of science knowledge and stuffs</p>
+	<h1>Connect</h1>
+	<p>Find me on social platforms</p>
 	<section class="homefeed">
-		{{ partial "homefeed.html" (where site.RegularPages "Section" "science") }}
+		{{ range .Site.Menus.social }}
+		<a href="{{ .URL }}" target="_blank" rel="noreferrer noopener">{{ .Name }}</a>
+		{{ end}}
 	</section>
 </article>
 {{ end }}

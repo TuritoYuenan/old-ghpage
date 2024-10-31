@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
-	/* MARK: Color palette from Haikei */
+	/* Color palette from Haikei */
 	--haikei-black: #001122;
 	--haikei-white: #FFFFFF;
 	--haikei-grey: #888277;
@@ -13,11 +13,11 @@
 	--haikei-blue: #0066FF;
 	--haikei-violet: #715DF2;
 
-	/* MARK: Base color */
+	/* Base color */
 	background-color: var(--haikei-black);
 	color: var(--haikei-white);
 
-	/* MARK: Base font */
+	/* Base font */
 	font-size: 16px;
 	font-family: 'Lexend', sans-serif;
 }
@@ -34,7 +34,7 @@ body {
 
 /* MARK: Main content */
 main {
-	/* MARK: Lend space for navbar */
+	/* Lend space for navbar */
 	margin-left: 6rem;
 	padding: 1rem;
 }
@@ -71,13 +71,13 @@ h1 {
 }
 
 /* MARK: Style for paragraphs and lists */
-p, ul, ol {
+:is(p, ul, ol) {
 	margin-inline: 0;
 	margin-block: 0 1rem;
 }
 
 /* MARK: Limit text width */
-p, li {
+:is(p, li) {
 	max-width: 75ch;
 }
 
@@ -106,29 +106,29 @@ hr {
 
 /* MARK: Navigation bar/rail */
 nav {
-	/* MARK: Rail shape */
+	/* Rail shape */
 	width: 6rem;
 	height: 100vh;
 	padding: 1rem;
 
-	/* MARK: Fixed in place */
+	/* Fixed in place */
 	position: fixed;
 	top: 0;
 	left: 0;
 
-	/* MARK: Flexbox */
+	/* Flexbox */
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
 
-	/* MARK: Color */
+	/* Color */
 	background-color: var(--haikei-yellow);
+}
 
-	/* MARK: Scale navbar links when hovered */
-	& a:hover {
-		scale: 1.2;
-	}
+/* Scale navbar links when hovered */
+nav a:hover {
+	scale: 1.2;
 }
 
 /* MARK: Navigation bar menu */
@@ -138,44 +138,42 @@ nav {
 	gap: 1rem;
 	display: flex;
 	flex-direction: column;
+}
 
-	/* MARK: Menu items */
-	& a {
-		width: 4rem;
-		height: 4rem;
-		padding: 0.5rem;
-		background-color: var(--haikei-black);
-		border-radius: 50%;
-	}
+/* Menu items */
+#menu a {
+	width: 4rem;
+	height: 4rem;
+	padding: 0.5rem;
+	background-color: var(--haikei-black);
+	border-radius: 20%;
+}
 
-	/* MARK: Menu icons */
-	& img {
-		display: block;
-		max-width: 100%;
-		height: auto;
-	}
+/* Menu icons */
+#menu img {
+	display: block;
+	max-width: 100%;
+	height: auto;
 }
 
 /* MARK: Mobile mode */
-@media (width <= 600px) {
-	/* MARK: Remove lent space for navbar */
+@media (width <=600px) {
+
+	/* Remove lent space for navbar */
 	main {
 		margin-left: 0;
 	}
 
-	/* MARK: Change to Bar shape */
+	/* Change to Bar shape */
 	nav {
 		width: 100%;
 		height: auto;
 		position: static;
+		flex-direction: row;
+		gap: 1rem;
 	}
 
-	/* MARK: Hide wordmark */
-	#wordmark {
-		display: none;
-	}
-
-	/* MARK: Horizontal menu */
+	/* Horizontal menu */
 	#menu {
 		flex-direction: row;
 	}

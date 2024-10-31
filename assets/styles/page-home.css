@@ -1,3 +1,22 @@
+/* MARK: Hero banner */
+#hero {
+	padding: 1rem;
+	text-align: center;
+
+	display: flex;
+	flex-direction: column;
+	place-items: center;
+}
+
+#hero #title {
+	font-size: 4.5rem;
+	font-variant: small-caps;
+}
+
+#hero #subtitle {
+	font-size: 1.5rem;
+}
+
 /* MARK: Feed */
 .homefeed {
 	padding-block: 1rem;
@@ -14,18 +33,19 @@
 
 	max-width: var(--fwidth);
 	margin-right: var(--fsize);
-	background: #FFF1;
+	background: color-mix(in srgb, var(--haikei-black) 100%, grey 10%);
 	border-radius: 1rem;
+	color: var(--haikei-white);
 	box-shadow: var(--fsize) var(--fsize) var(--haikei-red);
 }
 
 /* MARK: Feed item - Thumbnail */
 .homefeed > div img {
-	/* MARK: Responsive image size */
+	/* Responsive image size */
 	width: var(--fwidth);
 	height: auto;
 
-	/* MARK: As a rounded block */
+	/* As a rounded block */
 	display: block;
 	border-radius: 1rem 1rem 0 0;
 }
@@ -35,25 +55,6 @@
 	padding: 1rem;
 	color: inherit;
 	display: block;
-}
-
-/* MARK: Hero banner */
-#hero {
-	padding: 1rem;
-	text-align: center;
-
-	display: flex;
-	flex-direction: column;
-	place-items: center;
-}
-
-#hero #title {
-	font-size: 5rem;
-	font-variant: small-caps;
-}
-
-#hero #subtitle {
-	font-size: 2rem;
 }
 
 @media (width <= 900px) {

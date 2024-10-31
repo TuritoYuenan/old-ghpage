@@ -1,55 +1,6 @@
 {{define "head"}}
-<style>
-	/* MARK: List page header */
-	header {
-		padding: 1rem;
-		text-align: center;
-
-		& h1 {
-			font-size: 3rem;
-		}
-
-		& p {
-			margin: auto;
-			font-size: 1.5rem;
-		}
-	}
-
-	/* MARK: List view */
-	#listview {
-		padding: 1rem;
-
-		/* MARK: Grid layout */
-		display: grid;
-		grid-template-columns: auto; /*repeat(auto-fit, minmax(50ch, 1fr));*/
-		gap: 2rem;
-	}
-
-	/* MARK: List item */
-	#listview a {
-		/* MARK: Keep default color */
-		color: inherit;
-
-		/* MARK: Flexbox layout */
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-
-		/* MARK: Gap between thumbnail and info */
-		gap: 2rem;
-
-		/* MARK: Item thumbnail */
-		& img {
-			max-width: 30ch;
-			width: 100%;
-			height: auto;
-			display: block;
-			border-radius: 1rem;
-
-			box-shadow: 10px 10px var(--haikei-red);
-		}
-	}
-</style>
+{{ $style := resources.Get "styles/page-list.css" | minify }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}">
 {{end}}
 
 {{define "main"}}
