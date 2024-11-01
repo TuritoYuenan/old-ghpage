@@ -22,7 +22,7 @@
 	padding-block: 1rem;
 	display: flex;
 	flex-direction: row;
-	overflow-x: auto;
+	overflow-x: scroll;
 	gap: 1.5rem;
 }
 
@@ -48,6 +48,11 @@
 	/* As a rounded block */
 	display: block;
 	border-radius: 1rem 1rem 0 0;
+}
+
+/* Feed item - Headline */
+.homefeed h2 {
+	margin-block: 0.5rem;
 }
 
 /* MARK: Feed item - Info */

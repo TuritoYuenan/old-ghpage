@@ -156,6 +156,16 @@ nav a:hover {
 	height: auto;
 }
 
+/* Chips */
+span.chip {
+	--accent: var(--haikei-red);
+
+	padding: 0.4rem 0.5rem;
+	background-color: color-mix(in srgb, var(--accent) 30%, transparent 80%);
+	display: inline-block;
+	border-radius: 0.4rem;
+}
+
 /* MARK: Mobile mode */
 @media (width <=600px) {
 
