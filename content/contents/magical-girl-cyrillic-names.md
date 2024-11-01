@@ -3,7 +3,7 @@ title: Linguistics - Magical Girl Cyrillic Names
 description: Cyrillic names for Magical girls
 date: 2022-06-15T10:41:00+07:00
 draft: false
-thumbnail: https://placehold.co/400x300
+thumbnail: https://placehold.co/160x90
 ---
 
 ## Madoka Magica

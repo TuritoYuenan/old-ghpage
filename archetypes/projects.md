@@ -1,14 +1,16 @@
 ---
 title: {{ replace .Name "-" " " | title }}
 description:
-thumbnail: https://placehold.co/400x300
+thumbnail: https://placehold.co/160x90
 date: {{ .Date }}
 draft: true
 
-start-date: {{ .Date }}
+end_date: {{ .Date }}
 deployment: https://turitoyuenan.github.io/
 repository:
 - https://github.com/TuritoYuenan/
+keywords:
+-
 skills:
 - Visual Studio Code
 - Figma

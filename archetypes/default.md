@@ -1,7 +1,7 @@
 ---
 title: {{ replace .Name "-" " " | title }}
 description:
-thumbnail: https://placehold.co/400x300
+thumbnail: https://placehold.co/160x90
 date: {{ .Date }}
 draft: true
 ---
