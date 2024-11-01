@@ -16,13 +16,13 @@ params:
 
 menu:
   social:
-    - name: Github
+    - name: GitHub
       url: https://github.com/TuritoYuenan
       weight: 1
     - name: LinkedIn
-      url: https://linkedin.com/in/turitoyuenan
+      url: https://linkedin.com/in/trietntm-cs
       weight: 2
-    - name: Leetcode
+    - name: LeetCode
       url: https://leetcode.com/TuritoYuenan
       weight: 3
     - name: Replit
