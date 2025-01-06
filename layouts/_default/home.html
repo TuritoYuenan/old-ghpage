@@ -15,21 +15,21 @@
 <article>
 	{{ .Content }}
 
-	<h1>Contents</h1>
-	<p>Articles, Blog posts, Announcements</p>
-	<section class="homefeed">
-		{{ partial "homefeed.html" (where site.RegularPages "Section" "contents") }}
-	</section>
-
-	<h1>Project Showcase</h1>
+	<h1><a href="./projects">Projects</a></h1>
 	<p>Showcase of my projects</p>
 	<section class="homefeed">
 		{{ partial "homefeed.html" (where site.RegularPages "Section" "projects") }}
 	</section>
 
+	<h1><a href="./contents">Contents</a></h1>
+	<p>Articles, Blog posts, Announcements</p>
+	<section class="homefeed">
+		{{ partial "homefeed.html" (where site.RegularPages "Section" "contents") }}
+	</section>
+
 	<h1>Connect</h1>
 	<p>Find me on social platforms</p>
-	<section class="homefeed">
+	<section>
 		{{ range .Site.Menus.social }}
 		<span class="chip">
 			<a href="{{ .URL }}" target="_blank" rel="noreferrer noopener">{{ .Name }}</a>

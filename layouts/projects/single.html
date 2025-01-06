@@ -16,10 +16,10 @@
 	</section>
 
 	<h2>Keywords</h2>
-	{{ range .Params.keywords }}<span>{{ . }}</span> / {{ end }}
+	{{ range .Params.keywords }}<span class="chip">{{ . }}</span>{{ end }}
 
 	<h2>Skills</h2>
-	{{ range .Params.skills }}<span>{{ . }}</span> / {{ end }}
+	{{ range .Params.skills }}<span class="chip">{{ . }}</span>{{ end }}
 
 	{{ .Content }}
 </article>

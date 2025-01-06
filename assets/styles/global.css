@@ -34,20 +34,14 @@ body {
 
 /* MARK: Main content */
 main {
-	/* Lend space for navbar */
-	margin-left: 6rem;
-	padding: 1rem;
-}
-
-/* MARK: Article view */
-article {
-	padding: 1rem;
+	margin-left: 6rem; /* Lend space for navbar */
+	padding: 2rem;
 }
 
 /* MARK: Footer */
 footer {
 	max-width: 110ch;
-	padding: 1rem;
+	padding-top: 2rem;
 }
 
 /* MARK: Quote */
@@ -160,7 +154,8 @@ nav a:hover {
 span.chip {
 	--accent: var(--haikei-red);
 
-	padding: 0.4rem 0.5rem;
+	margin-right: 0.4rem;
+	padding: 0.2rem 0.4rem;
 	background-color: color-mix(in srgb, var(--accent) 30%, transparent 80%);
 	display: inline-block;
 	border-radius: 0.4rem;
